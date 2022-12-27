@@ -16,8 +16,9 @@ header{
     background-color: aqua;
     text-align: center;
     width: 100vw;
-    height: rem;
-    padding: 2rem 0;
+    height: 5rem;
+    padding-top: 1.5rem;
+    border: .3rem solid rgb(212, 210, 165);
 }
 
 .articles_and_aside {
@@ -40,28 +41,34 @@ header{
 
 article:nth-of-type(1){
     background-color: rgb(84, 196, 125);
-    height: 4rem;
+    height: 5rem;
+    border: .3rem solid rgb(212, 210, 165);
 }
 
 article:nth-of-type(2){
     background-color: orange;
-    height: 4rem;
+    height: 5rem;
+    border: .3rem solid rgb(212, 210, 165);
 }
 article:nth-of-type(3){
     background-color: rgb(202, 29, 58);
-    height: 4rem;
+    height: 5rem;
+    border: .3rem solid rgb(212, 210, 165);
 }
 article:nth-of-type(4){
     background-color: rgb(184, 228, 118);
-    height: 4rem;
+    height: 5rem;
+    border: .3rem solid rgb(212, 210, 165);
 }
 
 .aside {
     background-color: rgb(186, 104, 227);
     width: 30vw;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: .3rem solid rgb(212, 210, 165);
 }
 
 footer{
@@ -69,12 +76,14 @@ footer{
     text-align: center;
     width: 100vw;
     height: 5rem;
-    padding: 2rem 0;
+    padding-top: 1.5rem;
+    border: .3rem solid rgb(212, 210, 165);
 }
+
 
 /* --- tablets --- */
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .articles_and_aside {
         display: flex;
