@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body{
+    font-size: 1rem;
+}
+
+header{
+    background-color: aqua;
+    text-align: center;
+    width: 100vw;
+    height: rem;
+    padding: 2rem 0;
+}
+
+.articles_and_aside {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.articles {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles article {
+    width: 35vw;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+article:nth-of-type(1){
+    background-color: rgb(84, 196, 125);
+    height: 4rem;
+}
+
+article:nth-of-type(2){
+    background-color: orange;
+    height: 4rem;
+}
+article:nth-of-type(3){
+    background-color: rgb(202, 29, 58);
+    height: 4rem;
+}
+article:nth-of-type(4){
+    background-color: rgb(184, 228, 118);
+    height: 4rem;
+}
+
+.aside {
+    background-color: rgb(186, 104, 227);
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color:rgb(102, 102, 246);
+    text-align: center;
+    width: 100vw;
+    height: 5rem;
+    padding: 2rem 0;
+}
+
+/* --- tablets --- */
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .articles_and_aside {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+
+    .aside{
+        height: 5rem;
+        width: 100vw;
+    }
+    
+    .articles {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .articles article {
+        width: 50vw;
+    }
+}
+
+/* --- smartphones --- */
+
+@media (max-width: 576px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles_and_aside {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .articles{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .articles article {
+        width: 100vw;
+    }
+
+    .aside {
+        width: 100vw;
+        padding: 2rem 0;
+    }
+}
